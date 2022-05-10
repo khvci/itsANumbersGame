@@ -8,7 +8,6 @@ public class Game {
             Round round = new Round();
         }
         int points = Round.getRight() - (Round.getWrong() * 2);
-        //Points.highestScore = Math.max(points, Points.highestScore);
         highScore = Math.max(points, highScore);
 
         System.out.println(String.format("\nYou gave %d right and %d wrong answers", Round.getRight(), Round.getWrong()));
